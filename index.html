@@ -35,6 +35,34 @@
             .sora{
                font-family: "Sora", serif;
             }
+
+            .typewriter {
+                overflow: hidden; /* Ensures text is hidden until animation */
+                white-space: nowrap; /* Prevents text from wrapping */
+                border-right: 3px solid orange; /* Cursor effect */
+                font-size: 2.5rem; /* Adjust as needed */
+                font-weight: bold;
+                width: 0; /* Starts with 0 width */
+                animation: typing 3s steps(30, end) forwards, blinkCursor 0.8s infinite;
+            }
+
+            /* Typing animation */
+            @keyframes typing {
+              from {
+                width: 0;
+              }
+              to {
+                width: 100%;
+              }
+            }
+            
+            /* Cursor blinking animation */
+            @keyframes blinkCursor {
+              50% {
+                border-color: transparent;
+              }
+            }
+
         </style>
 
         <!-- Custom color -->
@@ -100,7 +128,7 @@
             <section
                 class="px-[20px] py-[10px] lg:px-[140px] lg:py-[28px] sora flex flex-col lg:flex-row relative items-center">
                 <div class="banner-content z-10 w-full lg:w-1/2">
-                    <h1 class="text-[2.5rem] lg:text-[3.5rem] adlam-display">
+                    <h1 class="text-[2.5rem] lg:text-[3.5rem] adlam-display typewriter">
                         Pamper Your Pet,<br>Because They Deserve<br>the Best
                     </h1>
                     <p class="text-[#111111] text-[1.25rem] mt-4 mb-6">
@@ -112,7 +140,8 @@
                         pet</button>
                 </div>
 
-                <div class="banner-image absolute -bottom-32 md:right-28 md:-bottom-72">
+                <div
+                    class="banner-image absolute -bottom-32 md:right-28 md:-bottom-72">
                     <img src="./assets/cat-big.png" alt="Pet"
                         class="w-full">
                 </div>

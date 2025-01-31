@@ -25,20 +25,35 @@
            /* Font adlm */
             .adlam-display{
                 font-family: "ADLaM Display", serif;
-        
             }
 
             /* font sora */
-            
             .sora{
                font-family: "Sora", serif;
             }
         </style>
+
+        <!-- Custom color -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'primary-color':'#FFDC26', 
+                    'bg-color':'#FFF9F4',
+                    'card-color':'#F9DF8A',
+                  }
+                }
+              }
+            }
+          </script>
+
     </head>
     <body>
         <!-- header start -->
         <header>
-            <h1 class="adlam-display">Hi</h1>
+            <h1 class="adlam-display bg-bg-color">Hi</h1>
             <p class="sora">Lorem ipsum dolor sit amet.</p>
         </header>
         <!-- Header end -->

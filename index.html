@@ -37,13 +37,12 @@
             }
 
             .typewriter {
-                overflow: hidden; /* Ensures text is hidden until animation */
-                white-space: nowrap; /* Prevents text from wrapping */
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
                 border-right: 3px solid orange; /* Cursor effect */
-                font-size: 2.5rem; /* Adjust as needed */
-                font-weight: bold;
-                width: 0; /* Starts with 0 width */
-                animation: typing 3s steps(30, end) forwards, blinkCursor 0.8s infinite;
+                animation: typing 3s steps(20, end) forwards, blinkCursor 0.8s infinite;
+                width: 0;
             }
 
             /* Typing animation */
@@ -52,7 +51,7 @@
                 width: 0;
               }
               to {
-                width: 100%;
+                width: 50%;
               }
             }
             
@@ -126,10 +125,11 @@
 
             <!-- Banner Section start -->
             <section
-                class="px-[20px] py-[10px] lg:px-[140px] lg:py-[28px] sora flex flex-col lg:flex-row relative items-center">
+                class="px-[20px] py-[10px] lg:px-[140px] lg:py-[28px] sora flex flex-col lg:flex-row relative items-center mb-32 md:mb-72">
                 <div class="banner-content z-10 w-full lg:w-1/2">
-                    <h1 class="text-[2.5rem] lg:text-[3.5rem] adlam-display typewriter">
-                        Pamper Your Pet,<br>Because They Deserve<br>the Best
+                    <h1 class="text-[2.5rem] lg:text-[3.5rem] adlam-display">
+                        Pamper Your Pet,<br>Because They Deserve<br>
+                        <span class="typewriter">the Best</span>
                     </h1>
                     <p class="text-[#111111] text-[1.25rem] mt-4 mb-6">
                         Discover a world of treats, toys, and essentials
@@ -152,7 +152,13 @@
         <!-- Header end -->
 
         <!-- Main Start -->
-        <main></main>
+        <main>
+            <!-- Category Section -->
+             <section class="category adlam-display px-[20px] py-[10px] lg:px-[140px] lg:py-[28px]">
+                <h1 class="text-[2.25rem]">Browse By Categories</h1>
+             </section>
+             <!-- Category end -->
+        </main>
         <!-- Main end -->
 
         <!-- Footer start -->

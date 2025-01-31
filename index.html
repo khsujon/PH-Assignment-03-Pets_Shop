@@ -20,7 +20,11 @@
         <link
             href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet">
-
+        <!-- FontAwesome CDN -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
            /* Font adlm */
             .adlam-display{
@@ -50,11 +54,71 @@
           </script>
 
     </head>
-    <body>
+    <body class="sora">
         <!-- header start -->
         <header>
-            <h1 class="adlam-display bg-bg-color">Hi</h1>
-            <p class="sora">Lorem ipsum dolor sit amet.</p>
+            <!-- Nav start -->
+            <nav
+                class="bg-bg-color flex items-center justify-between px-[20px] py-[10px] lg:px-[140px] lg:py-[28px]">
+                <!-- Logo -->
+                <div class="logo flex gap-2 items-center">
+                    <div><img src="./assets/logo-header.png" alt="logo"></div>
+                    <h3 class="hidden lg:block text-[1.625rem]">Browse<span
+                            class="text-primary-color">4</span>Pets</h3>
+                </div>
+
+                <!-- Menu -->
+                <div class="hidden lg:block">
+                    <ul class="flex gap-8 items-center text-[1.25rem]">
+                        <li><a href></a>Find a pet</li>
+                        <li><a href></a>Breeds </li>
+                        <li><a href></a>Contact us</li>
+                    </ul>
+
+                </div>
+
+                <!-- buttons -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <i class="fa-regular fa-bell text-2xl"></i>
+                    <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                    <button
+                        class="btn btn-outline border-primary-color border-2 text-[1.25rem]">Login</button>
+                    <button
+                        class="btn btn-warning text-[1.25rem]">Register</button>
+                </div>
+
+                <!-- Hamburger -->
+                <div class="lg:hidden">
+                    <i class="fa-solid fa-bars text-2xl "></i>
+                </div>
+            </nav>
+            <!-- nav end -->
+
+            <hr class="border-t-2 border-black lg:hidden mb-10 lg:mb-[100px]">
+
+            <!-- Banner Section start -->
+            <section
+                class="px-[20px] py-[10px] lg:px-[140px] lg:py-[28px] sora flex flex-col lg:flex-row relative items-center">
+                <div class="banner-content z-10 w-full lg:w-1/2">
+                    <h1 class="text-[2.5rem] lg:text-[3.5rem] adlam-display">
+                        Pamper Your Pet,<br>Because They Deserve<br>the Best
+                    </h1>
+                    <p class="text-[#111111] text-[1.25rem] mt-4 mb-6">
+                        Discover a world of treats, toys, and essentials
+                        handpicked for your furry friends.
+                        Shop now and make tails wag with joy!
+                    </p>
+                    <button class="btn btn-warning text-[1.25rem]">Find a
+                        pet</button>
+                </div>
+
+                <div class="banner-image absolute -bottom-32 md:right-28 md:-bottom-72">
+                    <img src="./assets/cat-big.png" alt="Pet"
+                        class="w-full">
+                </div>
+            </section>
+
+            <!-- Banner end -->
         </header>
         <!-- Header end -->
 
